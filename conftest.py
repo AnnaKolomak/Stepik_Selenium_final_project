@@ -14,8 +14,8 @@ def browser(request):
     user_language = request.config.getoption("language")
     browser_name = request.config.getoption("browser_name")
 
-    if user_language !="es" and user_language != "fr":
-       raise pytest.UsageError("--language should be 'es' or 'fr'")
+##    if user_language !="es" and user_language != "fr":
+##       raise pytest.UsageError("--language should be 'es' or 'fr'")
 
     if browser_name == "chrome":
         options = Options()
